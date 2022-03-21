@@ -7,7 +7,7 @@
 					<image class="avatar" :src="vuex_user?vuex_user.avatar:'../../static/man.jpg'"></image>
 					<view class="u-p-l-20">
 						<view class="name u-font-18">{{vuex_user?vuex_user.name:'点击登录'}}</view>
-						<view class="addr u-light-color u-p-t-10 u-font-12">本程序由AIR源码站提供~</view>
+						<!-- <view class="addr u-light-color u-p-t-10 u-font-12">本程序由AIR源码站提供~</view> -->
 					</view>
 				</view>
 				<view class="div3"></view>

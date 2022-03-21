@@ -33,7 +33,6 @@
 			
 			<view >
 				<view class="u-p-t-40">
-				<scroll-view scroll-x style="" :scroll-into-view="rolldistance" :scroll-with-animation="true">
 					<view class="m-nav">
 						<view class="" id="akun1" style="padding: 0 16rpx;"></view>
 						<view class="scroll-view-item dhs" :id="'akun'+(index+1)" :class="cateStatic==item.type?'tag-active':''" @click="cateClick(item.type,item.more,'akun'+(index+2))" v-for="(item,index) in indexList" :key="index">
@@ -47,8 +46,8 @@
 							  </navigator>
 						</view>
 					</view>
-					</scroll-view>
-				<scroll-view scroll-x style="" :scroll-into-view="rolldistance" :scroll-with-animation="true">
+					<!-- <scroll-view scroll-x style="" :scroll-into-view="rolldistance" :scroll-with-animation="true">
+					</scroll-view> -->
 					<view class="m-nav">
 						<view class="" id="akun1" style="padding: 0 15rpx;"></view>
 						<view class="scroll-view-item dhs" :id="'akun'+(index+1)" :class="cateStatic==item.type?'tag-active':''" @click="cateClick(item.type,item.more,'akun'+(index+2))" v-for="(item,index) in indesList" :key="index">
@@ -62,7 +61,8 @@
 							  </navigator>
 						</view>
 					</view>
-				</scroll-view>
+				<!-- <scroll-view scroll-x style="" :scroll-into-view="rolldistance" :scroll-with-animation="true">
+				</scroll-view> -->
 			</view>
 			</view>
 			<view class="u-p-t-40">
@@ -339,6 +339,7 @@
 						pageSize: 20
 					},
 				})
+				console.log("list:",list.result.data)
 				that.hotList = list.result.data
 			},
 			cateClick(e,f,t){
