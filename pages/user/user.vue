@@ -122,7 +122,7 @@
 				
 
 				
-				<view class="u-flex u-row-between u-p-30 border-bottom" hover-class="hover-class1" hover-stay-time="50" @click="feedClick">
+				<!-- <view class="u-flex u-row-between u-p-30 border-bottom" hover-class="hover-class1" hover-stay-time="50" @click="feedClick">
 					<view class="u-flex u-row-left">
 						<image src="/static/icon/gonggao.png"></image>
 						<view class="u-p-l-20">意见反馈</view>
@@ -130,7 +130,7 @@
 					<view class="u-flex u-row-right">
 						<view class="arror-right"></view>
 					</view>
-				</view>
+				</view> -->
 			
 				
 			<view class="u-flex u-row-between u-p-30 border-bottom" hover-class="hover-class1" hover-stay-time="50" @click="cacheClick">
