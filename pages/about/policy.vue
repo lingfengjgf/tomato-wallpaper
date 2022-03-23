@@ -93,8 +93,7 @@
 			<view class="title">9.如何联系我们</view>
 			<view class="cont">
 				如果您对本隐私政策有任何疑问、意见或建议，通过以下方式与我们联系。
-				官网:airzyw.com
-				客服:jiang994111155
+				电子邮箱：lingfengjgf@163.com
 		</view>
 	</view>
   </view>

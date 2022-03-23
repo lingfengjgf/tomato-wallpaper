@@ -208,16 +208,16 @@
             }
             
         }
-        ,{
-            "path" : "pages/integral/charge",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "充值积分",
-                "enablePullDownRefresh": false,
-				"navigationStyle": "custom"
-            }
+    //     ,{
+    //         "path" : "pages/integral/charge",
+    //         "style" :                                                                                    
+    //         {
+    //             "navigationBarTitleText": "充值积分",
+    //             "enablePullDownRefresh": false,
+				// "navigationStyle": "custom"
+    //         }
             
-        }
+    //     }
         ,{
             "path" : "pages/system/system",
             "style" :                                                                                    
@@ -321,16 +321,16 @@
             }
             
         }
-        ,{
-            "path" : "pages/feed/feed",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "意见反馈",
-                "enablePullDownRefresh": false,
-				"navigationBarTextStyle": "black"
-            }
+    //     ,{
+    //         "path" : "pages/feed/feed",
+    //         "style" :                                                                                    
+    //         {
+    //             "navigationBarTitleText": "意见反馈",
+    //             "enablePullDownRefresh": false,
+				// "navigationBarTextStyle": "black"
+    //         }
             
-        }
+    //     }
         ,{
             "path" : "pages/find/find",
             "style" :                                                                                    
@@ -434,7 +434,7 @@
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "手机墙纸精选",
+		"navigationBarTitleText": "手机壁纸精选",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
 	},

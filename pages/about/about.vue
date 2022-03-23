@@ -9,9 +9,11 @@
 		:border-bottom="false"
 		></u-navbar>
 		<view class="top u-flex-col u-col-center u-p-t-80">
-			<image src="../../static/logo.png"></image>
-			<view class="name u-p-t-30 u-font-18">手机墙纸精选</view>
-			<view class="u-tips-color u-font-14 u-p-t-15">AIR源码站</view>
+			<view class="top-logo">
+				<image src="../../static/logo.png"></image>
+			</view>
+			<view class="name u-p-t-30 u-font-18">小番茄手机壁纸图库</view>
+<!-- 			<view class="u-tips-color u-font-14 u-p-t-15">AIR源码站</view> -->
 		</view>
 		<view class="menu u-m-l-40 u-m-r-40 u-m-t-40 border-box">
 			<view class="u-flex u-row-between u-p-30 border-bottom" hover-class="hover-class1" hover-stay-time="50" @click="agreementClick">
@@ -66,10 +68,18 @@
 	.name{
 		font-weight: 550;
 	}
+	.top-logo{
+		width: 180rpx;
+		height: 180rpx;
+		border-radius: 180rpx;	
+		background: #f8f8f8;
+		// border: 1rpx solid #eee;
+	}
 	image{
 		width: 180rpx;
 		height: 180rpx;
 		border-radius: 180rpx;
+		border: 1rpx solid #eee;
 	}
 	.border-box{
 		box-shadow: 0 0px 24px rgba(231, 231, 231, 0.6);
