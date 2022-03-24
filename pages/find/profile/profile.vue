@@ -54,15 +54,7 @@ export default {
   components: {},
   props: {},
   onLoad: function (t) {
-    var e = this;
-    this.getCategory().then(function (t) {
-      var n = t.categoryList;
-      e.setData({
-        categoryList: n
-      });
-    }).catch(function (t) {
-      console.error(t);
-    }), this.prepareData();
+	this.getConfig();
     var that = this;
     uni.request({
       url: 'https://wag.qmniy.cn/api.php',
@@ -124,6 +116,32 @@ export default {
         console.error(t), uni.stopPullDownRefresh();
       });
     },
+	async getConfig(){
+		let that = this
+		let config = await uniCloud.callFunction({
+			name: 'config_map',
+			data: {
+				'keys': ['headPortShow']
+			},
+		})
+		if(config.result.success) {
+			var headPortShow=config.result.data[0]
+			that.getCategory().then(function (t) {
+			  var n = t.categoryList;
+			  if(!headPortShow){
+				  var disabled=['1','2','3','10','11','12','15'];
+				  n=n.filter(item=>!disabled.includes(item.cid))
+			  }
+			  that.setData({
+			    categoryList: n,
+				TabCur:n[0].cid
+			  });
+			  that.prepareData();
+			}).catch(function (t) {
+			  console.error(t);
+			});	
+		}
+	},
     getCategory: function () {
       var t = (0, n.default)(e.default.mark(function t() {
         return e.default.wrap(function (t) {

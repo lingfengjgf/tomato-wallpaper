@@ -42,11 +42,11 @@
 		<u-modal v-model="editShow" title="配置" :show-cancel-button="true" confirm-text="保存" confirm-color="#fcc600" content="content" :async-close="true"  @confirm="editChange" negative-top="280">
 			<view class="u-p-40">
 				<view class="">
-					<u-input v-model="config.name" :border="true" border-color="#F7F7F7" :clearable="false" :height="80" disabled placeholder="填写配置的说明"/>
+					<u-input v-model="config.name" :border="true" border-color="#F7F7F7" :clearable="false" :height="80"  placeholder="填写配置的说明"/>
 				</view>
-				<!-- <view class="u-p-t-15">
-					<u-input v-model="config.key" :border="true" border-color="#F7F7F7" :clearable="false" :height="80" disabled placeholder="填写配置的键"/>
-				</view> -->
+				<view class="u-p-t-15">
+					<u-input v-model="config.key" :border="true" border-color="#F7F7F7" :clearable="false" :height="80"  placeholder="填写配置的键"/>
+				</view>
 				<view class="u-p-t-15">
 					<u-input v-model="config.val" :border="true" border-color="#F7F7F7" :clearable="false" :height="80" placeholder="填写配置的值"/>
 				</view>
