@@ -33,7 +33,7 @@
 				<image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-676f0968-fd33-480e-a7e7-40d1564c0de0/f88fc852-427e-414a-899c-8254da623f84.png" style="width:700rpx;height: 343rpx" @click="ttsignClick"></image>
 				<image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-676f0968-fd33-480e-a7e7-40d1564c0de0/c46c1f58-520d-4245-a411-6a25c9339012.png" style="width:700rpx;height: 343rpx" @click="designClick"></image>
 				<image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-676f0968-fd33-480e-a7e7-40d1564c0de0/03ed58b7-f37d-469a-89ce-a2e0393692c9.png" style="width:700rpx;height: 343rpx" @click="signClick"></image>
-				<image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-676f0968-fd33-480e-a7e7-40d1564c0de0/5aad881c-a40a-4b3a-bf69-fd30dd299f2a.png" style="width:700rpx;height: 343rpx" @click="adClick"></image>
+				<image v-if='vuex_adShow' src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-676f0968-fd33-480e-a7e7-40d1564c0de0/5aad881c-a40a-4b3a-bf69-fd30dd299f2a.png" style="width:700rpx;height: 343rpx" @click="adClick"></image>
 			</view>
 			
 			<view class="" style="height: 180rpx;"></view>

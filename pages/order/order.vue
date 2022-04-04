@@ -14,7 +14,7 @@
 					<image :src="item.image" style="width: 215rpx;height: 350rpx;" mode="aspectFill"></image>
 				</view>
 			</view>
-			<!--ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom-->
+			<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 		</view>
 		<view v-if="noData"
 		class="u-flex u-flex-col u-col-center"

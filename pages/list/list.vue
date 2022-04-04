@@ -37,7 +37,7 @@
 						<block v-for="(item_, index_) in item.images" :key="index_">
 							<!-- #ifdef MP-WEIXIN -->
 							<view class="tab u-flex u-row-center u-col-center" v-show="adFlag" v-if="index != 0 && index%2 === 0 && index_ === 0">
-								<ad-custom unit-id="adunit-ed64de07c859828a" @load="adLoad" @error="adError" @close="adClose"></ad-custom>
+								<ad-custom v-if='vuex_adShow' unit-id="adunit-ed64de07c859828a" @load="adLoad" @error="adError" @close="adClose"></ad-custom>
 							</view>
 							<!-- #endif -->
 							<!-- #ifdef MP-QQ -->

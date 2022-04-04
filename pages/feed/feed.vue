@@ -21,7 +21,7 @@
 			<view class="u-light-color u-p-t-20 u-p-b-20 u-font-13">请留下你的联系方式，方便我们更快的联系到你并解决你的问题，感谢你的反馈！</view>
 			<view class="u-p-t-40 u-p-b-40"><view class="btn" hover-class="hover-class" hover-stay-time="50" @click="submit">提 交</view></view>
 		</view>
-		<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+		<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 	</view>
 </template>
 

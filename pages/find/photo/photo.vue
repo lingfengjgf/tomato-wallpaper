@@ -39,7 +39,7 @@
     </view>
     <view class="weui-footer_fixed-bottom">
         <view class="padding flex flex-direction">
-			<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+			<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
             <button @tap="copy" class="cu-btn bg-blue lg" :data-content="item.name">复制网名</button>
             <button @tap="copy" class="cu-btn bg-green margin-tb-sm lg" :data-content="item.memo">复制签名</button>
 			<button @tap="" class="cu-btn bg-yellow lg" :data-content="item.name">温馨提示：观看广告下载套图</button>

@@ -7,14 +7,15 @@
 			let config = await uniCloud.callFunction({
 				name: 'config_map',
 				data: {
-					'keys': ['writeShow', 'systemShow']
+					'keys': ['writeShow', 'systemShow', 'adShow']
 				},
 			})
 			if(config.result.success) {
-				console.log(config.result.data)
+				console.log("config_map:",config.result.data)
 
 				that.$u.vuex('vuex_writeShow', config.result.data[0])
 				that.$u.vuex('vuex_systemShow', config.result.data[1])
+				that.$u.vuex('vuex_adShow', config.result.data[2])
 			}
 		},
 		onShow: function() {

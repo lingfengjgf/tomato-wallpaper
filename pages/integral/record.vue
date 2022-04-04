@@ -19,7 +19,7 @@
 		</view>
 		<view class="u-p-l-40 u-p-r-40">
 			<view class="u-font-18 u-m-t-80 u-m-b-30 title">积分明细</view>
-			<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+			<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 			<view class="safe-area-inset-bottom">
 				<view class="u-flex u-row-between u-col-center border-bottom u-p-t-30 u-p-b-30" v-for="(item,index) in recordList" :key="index">
 					<view class="">

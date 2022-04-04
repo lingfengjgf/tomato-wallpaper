@@ -16,7 +16,7 @@
 				</view>
 			</view>
 		</view>
-		<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+		<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 		<view v-if="noData"
 		class="u-flex u-flex-col u-col-center"
 		style="width: 100vw;height: 50vh;padding-top: 200rpx;background-color: #FFFFFF;">

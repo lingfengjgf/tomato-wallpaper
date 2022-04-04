@@ -339,7 +339,7 @@
 						pageSize: 20
 					},
 				})
-				console.log("list:",list.result.data)
+				// console.log("list:",list.result.data)
 				that.hotList = list.result.data
 			},
 			cateClick(e,f,t){

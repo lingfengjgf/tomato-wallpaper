@@ -17,7 +17,7 @@
 				<!-- 微信客服：jiang994111155<br><br> -->
 				电子邮箱：lingfengjgf@163.com<br><br>
 			</view>
-			<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+			<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 		</view>
 	</view>
 </template>

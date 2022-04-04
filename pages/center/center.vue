@@ -41,7 +41,7 @@
 					<view class="u-font-10 u-p-t-10 eng">Collection ranking</view>
 				</view>
 			</view>
-			<ad-custom unit-id="adunit-794e1cbc5d71040f"></ad-custom>
+			<ad-custom v-if='vuex_adShow' unit-id="adunit-794e1cbc5d71040f"></ad-custom>
 			<view class="tags u-p-l-40 u-p-t-40 u-p-r-30">
 				<view class="u-font-18">热门标签</view>
 				<view class="u-flex u-row-left u-flex-wrap u-p-t-30">
@@ -241,7 +241,6 @@
 			border-radius: 40rpx;
 			line-height: 60rpx;
 			padding: 0 20rpx;
-			width: 19%;
 			text-align: center;
 			margin-right: 7rpx;
 			margin-bottom: 12rpx;
